@@ -292,6 +292,10 @@ def object_naming_mapping(category_name, object_id):
         if object_id > 1:
             raise ValueError("Study table can only be one for the moment.")
         return "study_table"
+    elif category_name == "industry_workbench":
+        if object_id > 1:
+            raise ValueError("Industry workbench can only be one for the moment.")
+        return "industry_workbench"
     else:
         return f"{category_name}_{object_id}"
 
@@ -459,6 +463,29 @@ def study_table_task_suites_generator(
 @PDDLDefinition(problem_name="LIBERO_Living_Room_Tabletop_Manipulation")
 @Language
 def living_room_table_task_suites_generator(
+    xy_region_kwargs_list,
+    affordance_region_kwargs_list,
+    fixture_object_dict,
+    movable_object_dict,
+    objects_of_interest,
+    init_states,
+    goal_states,
+):
+    result = []
+    result += region_module(
+        xy_region_kwargs_list=xy_region_kwargs_list,
+        affordance_region_kwargs_list=affordance_region_kwargs_list,
+    )
+    result += get_fixtures(**fixture_object_dict)
+    result += get_objects(**movable_object_dict)
+    result += get_objects_of_interest(objects_of_interest)
+    result += get_init_state(init_states)
+    result += get_goal_state(goal_states)
+    return result
+
+@PDDLDefinition(problem_name="LIBERO_Industry_Workbench_Manipulation")
+@Language
+def industry_workbench_task_suites_generator(
     xy_region_kwargs_list,
     affordance_region_kwargs_list,
     fixture_object_dict,

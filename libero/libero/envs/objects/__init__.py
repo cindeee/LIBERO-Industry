@@ -8,7 +8,7 @@ from .articulated_objects import *
 from .turbosquid_objects import *
 from .site_object import SiteObject
 from .target_zones import *
-
+from .industry_objects import *
 
 def get_object_fn(category_name):
     return OBJECTS_DICT[category_name.lower()]

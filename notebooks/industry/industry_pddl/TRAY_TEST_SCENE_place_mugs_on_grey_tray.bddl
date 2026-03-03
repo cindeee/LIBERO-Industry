@@ -1,0 +1,76 @@
+(define (problem LIBERO_Kitchen_Tabletop_Manipulation)
+  (:domain robosuite)
+  (:language place mugs on grey tray)
+    (:regions
+      (libero_grey_tray_init_region
+          (:target kitchen_table)
+          (:ranges (
+              (0.09999999999999999 -0.05 0.2 0.05)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (libero_mug_region_1
+          (:target kitchen_table)
+          (:ranges (
+              (-0.16999999999999998 0.06 -0.13 0.1)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (libero_mug_region_2
+          (:target kitchen_table)
+          (:ranges (
+              (-0.16999999999999998 -0.1 -0.13 -0.06)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (contain_region
+          (:target libero_grey_tray_1)
+      )
+      (top_center
+          (:target libero_grey_tray_1)
+      )
+      (front_edge
+          (:target libero_grey_tray_1)
+      )
+      (back_edge
+          (:target libero_grey_tray_1)
+      )
+    )
+
+  (:fixtures
+    kitchen_table - kitchen_table
+  )
+
+  (:objects
+    libero_grey_tray_1 - libero_grey_tray
+    libero_mug_1 libero_mug_2 - libero_mug
+  )
+
+  (:obj_of_interest
+    libero_mug_1
+    libero_mug_2
+  )
+
+  (:init
+    (On libero_grey_tray_1 kitchen_table_libero_grey_tray_init_region)
+    (On libero_mug_1 kitchen_table_libero_mug_region_1)
+    (On libero_mug_2 kitchen_table_libero_mug_region_2)
+  )
+
+  (:goal
+    (And (On libero_mug_1 libero_grey_tray_1_contain_region) (On libero_mug_2 libero_grey_tray_1_contain_region))
+  )
+
+)

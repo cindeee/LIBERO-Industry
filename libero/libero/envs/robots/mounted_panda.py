@@ -45,6 +45,7 @@ class MountedPanda(ManipulatorModel):
             "table": lambda table_length: (-0.16 - table_length / 2, 0, 0),
             "study_table": lambda table_length: (-0.25 - table_length / 2, 0, 0),
             "kitchen_table": lambda table_length: (-0.16 - table_length / 2, 0, 0),
+            "industry_workbench": lambda table_length: (-0.16 - table_length / 2, 0, 0),
         }
 
     @property

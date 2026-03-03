@@ -6,3 +6,4 @@ from .libero_living_room_tabletop_manipulation import (
     Libero_Living_Room_Tabletop_Manipulation,
 )
 from .libero_kitchen_tabletop_manipulation import Libero_Kitchen_Tabletop_Manipulation
+from .libero_industry_workbench_manipulation import Libero_Industry_Workbench_Manipulation

@@ -363,6 +363,17 @@ class BDDLBaseDomain(SingleArmEnv):
                 **self._arena_properties,
             )
 
+        elif self._arena_type == "industry_workbench":
+            xpos = self.robots[0].robot_model.base_xpos_offset["industry_workbench"](
+                self.industry_workbench_full_size[0]
+            )
+            self.robots[0].robot_model.set_base_xpos(xpos)
+            mujoco_arena = IndustryWorkbenchArena(
+                table_full_size=self.industry_workbench_full_size,
+                table_offset=self.workspace_offset,
+                xml=self._arena_xml,
+                **self._arena_properties,
+            )
         # Arena always gets set to zero origin
         mujoco_arena.set_origin([0, 0, 0])
 

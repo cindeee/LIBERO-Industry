@@ -1,6 +1,6 @@
 import numpy as np
 
-from .base_region_sampler import MultiRegionRandomSampler
+from .base_region_sampler import MultiRegionRandomSampler, InSiteRegionRandomSampler
 from robosuite.utils.transform_utils import quat_multiply
 
 
@@ -272,3 +272,32 @@ class ObjectBasedSampler(MultiRegionRandomSampler):
                     self.rotation_axis
                 )
             )
+
+
+class ConveyorBeltSampler(InSiteRegionRandomSampler):
+    def __init__(
+        self,
+        object_name,
+        mujoco_objects=None,
+        x_ranges=None,
+        y_ranges=None,
+        rotation=None,
+        rotation_axis="z",
+        ensure_object_boundary_in_range=True,
+        ensure_valid_placement=True,
+        reference_pos=(0, 0, 0),
+        z_offset=0.01,
+    ):
+        name = f"conveyor-{object_name}"
+        super().__init__(
+            name,
+            mujoco_objects,
+            x_ranges,
+            y_ranges,
+            rotation,
+            rotation_axis,
+            ensure_object_boundary_in_range,
+            ensure_valid_placement,
+            reference_pos,
+            z_offset,
+        )

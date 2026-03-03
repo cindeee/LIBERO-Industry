@@ -1,0 +1,91 @@
+(define (problem LIBERO_Industry_Workbench_Manipulation)
+  (:domain robosuite)
+  (:language place box from conveyor belt to goal)
+    (:regions
+      (conveyor_belt_init_region
+          (:target industry_workbench)
+          (:ranges (
+              (-0.05 0.15000000000000002 0.05 0.25)
+            )
+          )
+          (:yaw_rotation (
+              (-1.5707963267948966 -1.5707963267948966)
+            )
+          )
+      )
+      (conveyor_belt_box_region_1
+          (:target industry_workbench)
+          (:ranges (
+              (-0.05 -0.05 0.05 0.05)
+            )
+          )
+          (:yaw_rotation (
+              (-1.5707963267948966 -1.5707963267948966)
+            )
+          )
+      )
+      (conveyor_belt_box_region_2
+          (:target industry_workbench)
+          (:ranges (
+              (-0.05 -0.05 0.05 0.05)
+            )
+          )
+          (:yaw_rotation (
+              (-1.5707963267948966 -1.5707963267948966)
+            )
+          )
+      )
+      (goal_region
+          (:target industry_workbench)
+          (:ranges (
+              (-0.05 0.15000000000000002 0.05 0.25)
+            )
+          )
+          (:yaw_rotation (
+              (0.0 0.0)
+            )
+          )
+      )
+      (1_top_region
+          (:target conveyor_belt_1)
+      )
+      (1_top_region_1
+          (:target conveyor_belt_1)
+      )
+      (1_top_region_2
+          (:target conveyor_belt_1)
+      )
+      (1_top_region_3
+          (:target conveyor_belt_1)
+      )
+      (1_top_region_4
+          (:target conveyor_belt_1)
+      )
+      (1_top_region_5
+          (:target conveyor_belt_1)
+      )
+    )
+
+  (:fixtures
+    industry_workbench - industry_workbench
+    conveyor_belt_1 - conveyor_belt
+  )
+
+  (:objects
+    box_1 box_2 - box
+  )
+
+  (:obj_of_interest
+  )
+
+  (:init
+    (On conveyor_belt_1 industry_workbench_conveyor_belt_init_region)
+    (On box_1 conveyor_belt_1_top_region_1)
+    (On box_2 conveyor_belt_1_top_region_2)
+  )
+
+  (:goal
+    (And (On box_1 industry_workbench_goal_region) (On box_2 industry_workbench_goal_region))
+  )
+
+)

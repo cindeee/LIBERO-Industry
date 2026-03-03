@@ -318,7 +318,7 @@ class SiteRegionRandomSampler(ObjectPositionSampler):
         # multiple rotations
         elif isinstance(self.rotation, dict):
             quat = np.array(
-                [0.0, 0.0, 0.0, 1.0]
+                [1.0, 0.0, 0.0, 0.0]
             )  # \theta=0, in robosuite, quat = (x, y, z), w
             for i in range(len(self.rotation.keys())):
                 rotation_axis = list(self.rotation.keys())[i]
@@ -329,15 +329,15 @@ class SiteRegionRandomSampler(ObjectPositionSampler):
 
                 if rotation_axis == "x":
                     current_quat = np.array(
-                        [np.sin(rot_angle / 2), 0, 0, np.cos(rot_angle / 2)]
+                        [np.cos(rot_angle / 2), np.sin(rot_angle / 2), 0, 0]
                     )
                 elif rotation_axis == "y":
                     current_quat = np.array(
-                        [0, np.sin(rot_angle / 2), 0, np.cos(rot_angle / 2)]
+                        [np.cos(rot_angle / 2), 0, np.sin(rot_angle / 2), 0]
                     )
                 elif rotation_axis == "z":
                     current_quat = np.array(
-                        [0, 0, np.sin(rot_angle / 2), np.cos(rot_angle / 2)]
+                        [np.cos(rot_angle / 2), 0, 0, np.sin(rot_angle / 2)]
                     )
 
                 quat = quat_multiply(current_quat, quat)

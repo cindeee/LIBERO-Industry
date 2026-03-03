@@ -47,6 +47,8 @@ def get_suite_generator_func(workspace_name):
         return study_table_task_suites_generator
     elif workspace_name == "coffee_table":
         return coffee_table_task_suites_generator
+    elif workspace_name == "industry_workbench":
+        return industry_workbench_task_suites_generator
     else:
         return floor_task_suites_generator
 

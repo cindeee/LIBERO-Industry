@@ -22,6 +22,9 @@ REGION_SAMPLERS = {
     "libero_kitchen_tabletop_manipulation": {
         "kitchen_table": Libero100TableRegionSampler
     },
+    "libero_industry_workbench_manipulation": {
+        "industry_workbench": ConveyorBeltSampler
+    },
 }
 
 
