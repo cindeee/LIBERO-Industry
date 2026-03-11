@@ -1,0 +1,53 @@
+<mujoco model="conveyor_curved">
+    <size njmax="500" nconmax="100" />
+    <asset>
+      <texture name="tex_metal_rough" type="2d" file="../conveyor_belt/pvc_green.png" />
+      <texture name="tex_metal_seamed" type="2d" file="Metal_Seamed.png" />
+
+      <material name="mat_belt_metal_rough" texture="tex_metal_rough" reflectance="0.5" rgba="1 1 1 1"/>
+      <material name="mat_fixtures_metal_seamed" texture="tex_metal_seamed" reflectance="0.7" rgba="1 1 1 1"/>
+      <mesh name="mesh_belt_curved1" file="belt_curved1.obj" scale="0.3 0.3 0.3" />
+      <mesh name="mesh_belt_curved2" file="belt_curved2.obj" scale="0.3 0.3 0.3" />
+      <mesh name="mesh_fixtures_curved" file="fixtures_curved.obj" scale="0.3 0.3 0.3"/>
+
+    </asset>
+
+  <worldbody>
+    <body>
+      <body name="object">
+        <!-- Curved belt body (adjust z-pos to half your scaled belt height: 0.171*0.6993/2 ≈ 0.0598) -->
+        <body name="conveyor_curved" pos="0 0 0" quat="1 0 0 0">
+          <!-- <joint name="belt_hinge" type="hinge" axis="0 1 0" pos="0 0 0.1" /> -->
+          <inertial pos="0 0 0" mass="1000" diaginertia="1000 1000 1000" />
+          
+          <!-- 4. Assign materials to meshes via <geom> tags -->
+          <!-- Belt mesh excluding the curved ends  -->
+          <geom name="contact_region" solimp="0.998 0.998 0.001" solref="0.001 1" density="100" 
+                type="mesh" mesh="mesh_belt_curved1" material="mat_belt_metal_rough" 
+                group="1" friction="0.8 0.1 0.001" contype="1" conaffinity="1" pos="0 0 0"/>
+
+          <geom name="belt_curved" solimp="0.998 0.998 0.001" solref="0.001 1" density="100" 
+                type="mesh" mesh="mesh_belt_curved2" material="mat_belt_metal_rough" 
+                group="1" friction="0.001 0.005 0.001" contype="0" conaffinity="0" pos="0 0 0"/>
+          <!-- Fixtures mesh with Metal_Seamed texture -->
+          <geom name="fixtures_curved" solimp="0.998 0.998 0.001" solref="0.001 1" density="100" 
+                type="mesh" mesh="mesh_fixtures_curved" material="mat_fixtures_metal_seamed" 
+                group="1" friction="0.6 0.005 0.001" contype="0" conaffinity="0" pos="0 0 0"/>
+
+          <!-- Optional: Keep your original contact regions/sites (adjust size/pos if needed) -->
+          <!-- <geom name="contact_region" type="box" size="0.0537 0.3358 0.0007" pos="0.014 0 0.0597" quat="1 0 0 0" rgba="1 0 0 0" group='0'/>          -->
+          <site name="top_region_1" type="box" size="0.072 0.072 0.001" pos="-0.294 0.124 0.0226" quat="0.8403 0 0 0.5421" rgba="0 1 0 0.3" group='0'/>
+          <site name="top_region_2" type="box" size="0.072 0.072 0.001" pos="-0.276 0.163 0.0226" quat="0.8861 0 0 0.4635" rgba="0 0 1 0.3" group='0'/>
+          <site name="top_region_3" type="box" size="0.072 0.072 0.001" pos="-0.249 0.202 0.0226" quat="0.8861 0 0 0.4635" rgba="1 1 0 0.3" group='0'/>
+          <site name="top_region_4" type="box" size="0.072 0.072 0.001" pos="-0.215 0.242 0.0226" quat="0.9239 0 0 0.3827" rgba="1 0 1 0.3" group='0'/>
+          <site name="top_region_5" type="box" size="0.072 0.072 0.001" pos="-0.174 0.281 0.0226" quat="0.9511 0 0 0.3090" rgba="0 1 1 0.3" group='0'/>
+        </body>
+      </body>
+      
+      <!-- REQUIRED SITES (adjusted for scaled belt height) -->
+      <site rgba="0 0 0 0" size="0.05" pos="0 0 -0.0296" name="bottom_site"/>
+      <site rgba="0 0 0 0" size="0.05" pos="0 0 0.0235" name="top_site"/>
+      <site rgba="0 0 0 0" size="0.05" pos="0.323 0 0.0235" name="horizontal_radius_site"/>
+    </body>
+  </worldbody>
+</mujoco>

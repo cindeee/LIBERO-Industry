@@ -46,6 +46,9 @@
             )
           )
       )
+      (contact_region
+          (:target conveyor_belt_1)
+      )
       (top_region_1
           (:target conveyor_belt_1)
       )

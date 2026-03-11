@@ -274,7 +274,7 @@ class ObjectBasedSampler(MultiRegionRandomSampler):
             )
 
 
-class ConveyorBeltSampler(InSiteRegionRandomSampler):
+class LiberoIndustrySampler(InSiteRegionRandomSampler):
     def __init__(
         self,
         object_name,

@@ -48,6 +48,22 @@ class ConveyorBelt(IndustryObject):
             "z": (0, 0),
         }
         self.rotation_axis = None
+
+@register_object
+class ConveyorCurved(IndustryObject):
+    def __init__(
+        self,
+        name="conveyor_curved",
+        obj_name="conveyor_curved",
+        joints=[dict(type="free", damping="0.0005")],
+    ):
+        super().__init__(name, obj_name, joints)
+        self.rotation = {
+            "x": (0, 0),
+            "y": (0, 0),
+            "z": (0, 0),
+        }
+        self.rotation_axis = None
         
 @register_object
 class Box(IndustryObject):

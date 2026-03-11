@@ -9,11 +9,11 @@ from libero.libero.envs.objects import *
 from libero.libero.envs.predicates import *
 from libero.libero.envs.regions import *
 from libero.libero.envs.utils import rectangle2xyrange
-from libero.libero.assets.industry_objects.conveyor_belt.conveyor_belt_physics import ConveyorBeltMixin
+from libero.libero.assets.industry_objects.conveyor_physics import ConveyorBeltMixin, ConveyorCurvedMixin
 
 
 @register_problem
-class Libero_Industry_Workbench_Manipulation(ConveyorBeltMixin, BDDLBaseDomain):
+class Libero_Industry_Workbench_Manipulation(ConveyorCurvedMixin, ConveyorBeltMixin, BDDLBaseDomain):
     def __init__(self, bddl_file_name, *args, **kwargs):
         self.workspace_name = "industry_workbench"
         self.visualization_sites_list = []
@@ -46,8 +46,11 @@ class Libero_Industry_Workbench_Manipulation(ConveyorBeltMixin, BDDLBaseDomain):
         super().__init__(bddl_file_name, *args, **kwargs)
         
         # Setup conveyor belt physics if conveyor_belt is in fixtures
-        if any('conveyor_belt' in fixture for fixture in self.parsed_problem.get('fixtures', {}).keys()):
-            self.setup_conveyor_belt(velocity=0.02, axis=(1, 0, 0), use_contact_detection=True)
+        fixtures = self.parsed_problem.get('fixtures', {}).keys()
+        if any('conveyor_belt' in f for f in fixtures):
+            self.setup_conveyor_belt(velocity=0.01, axis=(1, 0, 0))
+        if any('conveyor_curved' in f for f in fixtures):
+            self.setup_conveyor_curved(speed=0.02)
 
     def _load_fixtures_in_arena(self, mujoco_arena):
         """Nothing extra to load in this simple problem."""
