@@ -1,0 +1,42 @@
+<mujoco model="cable">
+  <extension>
+    <plugin plugin="mujoco.elasticity.cable"/>
+  </extension>
+
+  <compiler autolimits="true"/>
+
+  <worldbody>
+    <body>
+      <body name="object" pos="0 0 0">
+        
+        <composite type="cable" curve="s" count="41 1 1" size="1" offset="-0.5 0 0" initial="none">
+          <plugin plugin="mujoco.elasticity.cable">
+            <config key="twist" value="1e7"/>
+            <config key="bend" value="4e6"/>
+            <config key="vmax" value="0.05"/>
+          </plugin>
+          <joint kind="main" damping=".015"/>
+          <geom type="capsule" size=".005" rgba=".8 .2 .1 1" condim="1" group="1" conaffinity="1" contype="1"/>
+        </composite>
+
+        <body name="usb_plug_left" pos="-0.5 0 0">
+          <geom type="box" size="0.02 0.01 0.005" rgba="0.2 0.2 0.2 1" group="1" conaffinity="1" contype="1"/>
+        </body>
+
+        <body name="usb_plug_right" pos="0.5 0 0">
+          <geom type="box" size="0.02 0.01 0.005" rgba="0.2 0.2 0.2 1" group="1" conaffinity="1" contype="1"/>
+        </body>
+
+        <site rgba="0 1 0 0" size="0.01" pos="0 0 -0.01" name="bottom_site"/> 
+        <site rgba="0 0 1 0" size="0.01" pos="0 0 0.01" name="top_site"/>   
+        <site rgba="0 1 1 0" size="0.01" pos="0.5 0 0" name="horizontal_radius_site"/>
+        
+      </body>
+    </body>
+  </worldbody>
+
+  <equality>
+    <weld body1="B_first" body2="usb_plug_left"/>
+    <weld body1="B_last" body2="usb_plug_right"/>
+  </equality>
+</mujoco>

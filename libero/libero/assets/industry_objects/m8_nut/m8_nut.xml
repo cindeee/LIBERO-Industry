@@ -1,0 +1,21 @@
+<mujoco model="m8_nut">
+  <extension>
+    <plugin plugin="mujoco.sdf.nut">
+    </plugin>
+    <plugin plugin="mujoco.sdf.bolt">
+      <instance name="bolt">
+        <config key="radius" value="0.255"/>
+      </instance>
+    </plugin>
+  </extension>
+
+  <worldbody>
+    <body name="m16_bolt" pos="0 0 0.05">
+      <joint type="free"/> <geom type="sdf" name="m16_thread" mesh="m16_bolt_sdf" rgba="0.7 0.7 0.7 1">
+        <plugin instance="bolt_m16_inst"/>
+      </geom>
+      
+      <geom type="mesh" mesh="hex_head_stl" pos="0 0 0.02" class="visual_only"/>
+    </body>
+  </worldbody>
+</mujoco>

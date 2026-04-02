@@ -1,0 +1,42 @@
+<mujoco model="sponge">
+  <option timestep="0.002" integrator="implicitfast"/>
+  
+  <extension>
+    <plugin plugin="mujoco.elasticity.solid"/>
+  </extension>
+
+  <worldbody>
+    <geom type="plane" size="1 1 0.1" rgba="0.9 0.9 0.9 1"/>
+
+    <body name="libero_wrapper" pos="0 0 0.1"> <freejoint/> 
+      
+      <body name="object" pos="0 0 0">
+        <inertial pos="0 0 0" mass="0.02" diaginertia="1e-5 1e-5 1e-5" /> 
+        
+        <geom name="core_geom" type="box" size="0.005 0.025 0.005" rgba="1 0 0 0" 
+              friction="0.6 0.005 0.001" group="1" conaffinity="1" contype="1"/>
+        
+        <site name="box_site" type="box" size="0.01 0.05 0.01" rgba="1 0 0 0" />
+        
+        <flexcomp name="sponge_soft" type="grid" count="3 11 3" spacing="0.01 0.01 0.01" 
+                  radius="0.004" rgba="0.9 0.8 0.2 1" mass="0.08" dim="3">
+            
+            <contact condim="3" solref="0.01 1" solimp="0.95 0.99 0.0001"/>
+            
+            <edge damping="1"/>
+            
+            <plugin plugin="mujoco.elasticity.solid">
+                <config key="poisson" value="0.2"/>
+                <config key="young" value="5e4"/> 
+            </plugin>
+            
+            <pin id="49"/> 
+        </flexcomp>
+      </body>
+      
+      <site rgba="0 0 1 1" size="0.01" pos="0 0 -0.01" name="bottom_site"/> 
+      <site rgba="0 0 1 1" size="0.01" pos="0 0 0.01" name="top_site"/>   
+      <site rgba="0 0 1 1" size="0.01" pos="0 0.051 0" name="horizontal_radius_site"/>
+    </body>
+  </worldbody>
+</mujoco>
