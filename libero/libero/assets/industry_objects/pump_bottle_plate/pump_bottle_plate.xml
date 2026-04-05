@@ -1,38 +1,35 @@
 <mujoco model="pump_bottle_plate">
-  <asset>
-    <material name="plate_mat" rgba="0.85 0.85 0.85 1" />
-    <material name="cross_mat" rgba="0.1 0.1 0.1 1" />
-  </asset>
-
   <worldbody>
     <body>
-      <body name="object" pos="0 0 0">
-        <inertial pos="0 0 0" mass="0.5" diaginertia="1e-3 1e-3 1e-3" /> 
-        
-        <geom name="plate_geom" type="box" size="0.08 0.08 0.01" material="plate_mat" 
-              friction="0.6 0.005 0.001" group="1" conaffinity="1" contype="1"/>
-        <site name="plate_center_site" type="box" size="0.08 0.08 0.01" rgba="0 1 0 0" />
+        <body name="object" pos="0 0 0"> 
+            <body name="pump_bottle_plate" pos="0 0 0.0196" quat="1 0 0 0"> 
+                <inertial pos="0 0 0" mass="0.5" diaginertia="1e-3 1e-3 1e-3" />
+                
+                <geom name="pump_bottle_plate_geom" type="box" size="0.08 0.08 0.03" rgba="0.8 0.8 0.8 1" friction="0.6 0.005 0.001" group="1" conaffinity="1" contype="1"/>
+                
+                <site name="goal_region" type="box" size="0.08 0.08 0.01" pos="0 0 0.03" quat="1 0 0 0" rgba="0 0 1 0.2" group="0" />
 
-        <geom name="cross1_h" type="box" size="0.015 0.002 0.0005" pos="0.04 0.04 0.0105" material="cross_mat" conaffinity="0" contype="0" group="1"/>
-        <geom name="cross1_v" type="box" size="0.002 0.015 0.0005" pos="0.04 0.04 0.0105" material="cross_mat" conaffinity="0" contype="0" group="1"/>
-        <site name="cross1_center" pos="0.04 0.04 0.01" size="0.001" rgba="0 0 0 0"/>
+                <geom name="cross1_h" type="box" size="0.015 0.002 0.0001" pos="0.04 0.04 0.031" rgba="0.1 0.1 0.1 1" conaffinity="0" contype="0" group="1"/>
+                <geom name="cross1_v" type="box" size="0.002 0.015 0.0001" pos="0.04 0.04 0.031" rgba="0.1 0.1 0.1 1" conaffinity="0" contype="0" group="1"/>
+                <site name="cross1_center" type="box" pos="0.04 0.04 0.031" quat="1 0 0 0" size="0.015 0.015 0.005" rgba="0 0 0 0"/>
 
-        <geom name="cross2_h" type="box" size="0.015 0.002 0.0005" pos="-0.04 0.04 0.0105" material="cross_mat" conaffinity="0" contype="0" group="1"/>
-        <geom name="cross2_v" type="box" size="0.002 0.015 0.0005" pos="-0.04 0.04 0.0105" material="cross_mat" conaffinity="0" contype="0" group="1"/>
-        <site name="cross2_center" pos="-0.04 0.04 0.01" size="0.001" rgba="0 0 0 0"/>
+                <geom name="cross2_h" type="box" size="0.015 0.002 0.0001" pos="-0.04 0.04 0.031" rgba="0.1 0.1 0.1 1" conaffinity="0" contype="0" group="1"/>
+                <geom name="cross2_v" type="box" size="0.002 0.015 0.0001" pos="-0.04 0.04 0.031" rgba="0.1 0.1 0.1 1" conaffinity="0" contype="0" group="1"/>
+                <site name="cross2_center" type="box" pos="-0.04 0.04 0.031" quat="1 0 0 0" size="0.015 0.015 0.005" rgba="0 0 0 0"/>
 
-        <geom name="cross3_h" type="box" size="0.015 0.002 0.0005" pos="-0.04 -0.04 0.0105" material="cross_mat" conaffinity="0" contype="0" group="1"/>
-        <geom name="cross3_v" type="box" size="0.002 0.015 0.0005" pos="-0.04 -0.04 0.0105" material="cross_mat" conaffinity="0" contype="0" group="1"/>
-        <site name="cross3_center" pos="-0.04 -0.04 0.01" size="0.001" rgba="0 0 0 0"/>
+                <geom name="cross3_h" type="box" size="0.015 0.002 0.0001" pos="-0.04 -0.04 0.031" rgba="0.1 0.1 0.1 1" conaffinity="0" contype="0" group="1"/>
+                <geom name="cross3_v" type="box" size="0.002 0.015 0.0001" pos="-0.04 -0.04 0.031" rgba="0.1 0.1 0.1 1" conaffinity="0" contype="0" group="1"/>
+                <site name="cross3_center" type="box" pos="-0.04 -0.04 0.031" quat="1 0 0 0" size="0.015 0.015 0.005" rgba="0 0 0 0"/>
 
-        <geom name="cross4_h" type="box" size="0.015 0.002 0.0005" pos="0.04 -0.04 0.0105" material="cross_mat" conaffinity="0" contype="0" group="1"/>
-        <geom name="cross4_v" type="box" size="0.002 0.015 0.0005" pos="0.04 -0.04 0.0105" material="cross_mat" conaffinity="0" contype="0" group="1"/>
-        <site name="cross4_center" pos="0.04 -0.04 0.01" size="0.001" rgba="0 0 0 0"/>
-      </body>
+                <geom name="cross4_h" type="box" size="0.015 0.002 0.0001" pos="0.04 -0.04 0.031" rgba="0.1 0.1 0.1 1" conaffinity="0" contype="0" group="1"/>
+                <geom name="cross4_v" type="box" size="0.002 0.015 0.0001" pos="0.04 -0.04 0.031" rgba="0.1 0.1 0.1 1" conaffinity="0" contype="0" group="1"/>
+                <site name="cross4_center" type="box" pos="0.04 -0.04 0.031" quat="1 0 0 0" size="0.015 0.015 0.005" rgba="0 0 0 0"/>
+            </body>
+        </body>
       
-      <site rgba="0 1 0 0" size="0.01" pos="0 0 -0.01" name="bottom_site"/> 
-      <site rgba="0 0 1 0" size="0.01" pos="0 0 0.01" name="top_site"/>   
-      <site rgba="0 1 1 0" size="0.01" pos="0.08 0 0" name="horizontal_radius_site"/>
+      <site rgba="0 0 0 0" size="0.01" pos="0 0 -0.01" quat="1 0 0 0" name="bottom_site"/>        
+      <site rgba="0 0 0 0" size="0.01" pos="0 0 0.01" quat="1 0 0 0" name="top_site"/>   
+      <site rgba="0 0 0 0" size="0.01" pos="0.08 0 0" quat="1 0 0 0" name="horizontal_radius_site"/>
     </body>
   </worldbody>
 </mujoco>

@@ -1,4 +1,4 @@
-<mujoco model="pump_bottle_inlay_a">
+<mujoco model="pump_bottle_inlay_dyn_a">
   <default>
     <default class="visual">
       <geom group="1" type="mesh" contype="0" conaffinity="0"/>
@@ -179,7 +179,7 @@
 <worldbody>
     <body>
       <body name="object">
-        <body name="pump_bottle_inlay_a" pos="0 0 0.06" quat="1 0 0 0">
+        <body name="pump_bottle_inlay_dyn_a" pos="0 0 0.06" quat="1 0 0 0">
           <geom mesh="pump_bottle_inlay_a" class="visual" rgba="0.8 0.8 0.8 1" />
           <geom mesh="pump_bottle_inlay_a_collision_0" rgba="0.48044831402844657 0.8007392619743436 0.07847790225639639 1" class="collision"/>
           <geom mesh="pump_bottle_inlay_a_collision_1" rgba="0.04864215274560246 0.35143132012372247 0.7384301012255192 1" class="collision"/>

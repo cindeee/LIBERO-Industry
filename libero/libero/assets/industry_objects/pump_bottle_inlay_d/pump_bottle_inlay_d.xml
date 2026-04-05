@@ -264,7 +264,7 @@
       <site name="hole2_goal" type="cylinder" size="0.01695 0.001" pos="-0.04 0.04 0" rgba="0 1 0 0.3" />
       <site name="hole3_goal" type="cylinder" size="0.01695 0.001" pos="-0.04 -0.04 0" rgba="0 1 0 0.3" />
       <site name="hole4_goal" type="cylinder" size="0.01695 0.001" pos="0.04 -0.04 0" rgba="0 1 0 0.3" />
-    <site name="place_region" type="box" size="0.06 0.06 0.001" pos="0 0 0" rgba="0 0 1 0.2" quat="1 0 0 0" group="0" /></body></body>
+    <site name="goal_region" type="box" size="0.06 0.06 0.001" pos="0 0 0" rgba="0 0 1 0.2" quat="1 0 0 0" group="0" /></body></body>
     <site rgba="0 0 0 0" size="0.05" pos="0 0 -0.01" name="bottom_site" /><site rgba="0 0 0 0" size="0.05" pos="0 0 0.01" name="top_site" /><site rgba="0 0 0 0" size="0.05" pos="0 0 0.05" name="horizontal_radius_site" /></body>
   </worldbody>
 </mujoco>

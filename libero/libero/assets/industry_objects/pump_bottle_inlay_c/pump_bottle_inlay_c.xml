@@ -148,7 +148,7 @@
   <worldbody>
     <body>
       <body name="object">
-      <body name="pump_bottle_inlay_c" pos="0 0 0" euler="0.2618 0 0">
+      <body name="pump_bottle_inlay_c" pos="0 0 0.074" euler="0.0872 0.0872 0.785">
       <geom mesh="pump_bottle_inlay_c" class="visual" rgba="0.8 0.8 0.8 1" />
       <geom mesh="pump_bottle_inlay_c_collision_0" rgba="0.742648685042484 0.07896939915085521 0.8258120906408805 1" class="collision" />
       <geom mesh="pump_bottle_inlay_c_collision_1" rgba="0.9771202361351585 0.4202230415156758 0.0013575937342341637 1" class="collision" />
@@ -285,7 +285,7 @@
       <geom mesh="pump_bottle_inlay_c_collision_132" rgba="0.000664121273689422 0.38595584548419204 0.0712462795665999 1" class="collision" />
       <geom mesh="pump_bottle_inlay_c_collision_133" rgba="0.35921009153798433 0.4392941812242863 0.07693688733517923 1" class="collision" />
       <geom mesh="pump_bottle_inlay_c_collision_134" rgba="0.3520187725970949 0.6959724022434043 0.09527067307237103 1" class="collision" />
-      <site name="place_region" type="box" size="0.06 0.06 0.001" pos="0 0 0" rgba="0 0 1 0.2" quat="1 0 0 0" group="0" />
+      <site name="goal_region" type="box" size="0.06 0.06 0.001" pos="0 0 0" rgba="0 0 1 0.2" quat="1 0 0 0" group="0" />
       </body>
     </body>
       <site rgba="0 0 0 0" size="0.05" pos="0 0.02 -0.04" name="bottom_site" />

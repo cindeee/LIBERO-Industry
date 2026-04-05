@@ -1,0 +1,26 @@
+<mujoco model="bottle_groove">
+  <worldbody>
+    <body>
+      <body name="object" pos="0 0 0"> 
+          
+          <body name="bottle_groove" pos="0 0 0" quat="1 0 0 0"> 
+              <inertial pos="0 0 0" mass="0.5" diaginertia="1e-3 1e-3 1e-3" />
+              
+              <geom name="groove_bottom" type="box" size="0.025 0.075 0.005" pos="0 0 0.005" rgba="0.8 0.8 0.8 1" friction="0.6 0.005 0.001" group="1" conaffinity="1" contype="1"/>
+              
+              <geom name="groove_wall_left" type="box" size="0.005 0.075 0.02" pos="-0.025 0 0.03" rgba="0.8 0.8 0.8 1" friction="0.6 0.005 0.001" group="1" conaffinity="1" contype="1"/>
+              <geom name="groove_wall_right" type="box" size="0.005 0.075 0.02" pos="0.025 0 0.03" rgba="0.8 0.8 0.8 1" friction="0.6 0.005 0.001" group="1" conaffinity="1" contype="1"/>
+              
+              <geom name="groove_wall_front" type="box" size="0.02 0.005 0.02" pos="0 -0.070 0.03" rgba="0.8 0.8 0.8 1" friction="0.6 0.005 0.001" group="1" conaffinity="1" contype="1"/>
+              <geom name="groove_wall_back" type="box" size="0.02 0.005 0.02" pos="0 0.070 0.03" rgba="0.8 0.8 0.8 1" friction="0.6 0.005 0.001" group="1" conaffinity="1" contype="1"/>
+
+              <site name="place_region" type="box" size="0.02 0.065 0.001" pos="0 0 0.01" quat="1 0 0 0" rgba="0 0 1 0.2" group="0" />
+          </body>
+        
+        <site rgba="0 0 0 0" size="0.01" pos="0 0 -0.01" quat="1 0 0 0" name="bottom_site"/>        
+        <site rgba="0 0 0 0" size="0.01" pos="0 0 0.05" quat="1 0 0 0" name="top_site"/>   
+        <site rgba="0 0 0 0" size="0.01" pos="0.025 0 0" quat="1 0 0 0" name="horizontal_radius_site"/>
+      </body>
+    </body>
+  </worldbody>
+</mujoco>
