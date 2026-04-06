@@ -5,7 +5,8 @@ import glob
 
 def clean_and_generate_model():
     # Target directory
-    folder_path = "/Users/cindy/experiments/LIBERO/libero/libero/assets/industry_objects/mouse"
+    thing = "keyboard"
+    folder_path = f"/Users/cindy/experiments/LIBERO/libero/libero/assets/industry_objects/{thing}"
     xml_output_path = os.path.join(folder_path, "model.xml")
     
     # 1. Find and sort all remaining collision files
@@ -52,7 +53,7 @@ def clean_and_generate_model():
         collision_geoms += f'                <geom mesh="model_collision_{i}" type="mesh" group="3"/>\n'
 
     # Robosuite / LIBERO Environment XML Template
-    xml_content = f"""<mujoco model="mouse">
+    xml_content = f"""<mujoco model="{thing}">
   <asset>
     <texture type="2d" name="texture" file="texture.png"/>
     <material name="material_0" texture="texture" specular="0.5" shininess="0.5"/>
@@ -63,7 +64,7 @@ def clean_and_generate_model():
   <worldbody>
     <body>
         <body name="object" pos="0 0 0"> 
-            <body name="mouse" pos="0 0 0" quat="1 0 0 0"> 
+            <body name="{thing}" pos="0 0 0" quat="1 0 0 0"> 
                 <inertial pos="0 0 0" mass="0.2" diaginertia="1e-3 1e-3 1e-3" />
                 
                 <geom material="material_0" mesh="model" type="mesh" contype="0" conaffinity="0" group="2"/>

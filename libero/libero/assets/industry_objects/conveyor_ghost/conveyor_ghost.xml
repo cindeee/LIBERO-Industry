@@ -6,107 +6,7 @@
     <body>
       <body name="object">
       <site name="ghost_active_region" type="box" size="0.1 0.4 0.05" pos="0 0 0.85" quat="1 0 0 0" rgba="0 1 0 0.1" group="1"/>
-      <site name="groove_pool_0" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_1" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_2" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_3" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_4" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_5" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_6" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_7" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_8" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_9" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_10" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_11" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_12" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_13" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_14" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_15" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_16" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_17" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_18" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_19" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_20" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_21" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_22" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_23" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_24" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_25" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_26" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_27" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_28" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_29" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_30" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_31" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_32" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_33" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_34" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_35" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_36" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_37" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_38" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_39" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_40" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_41" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_42" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_43" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_44" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_45" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_46" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_47" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_48" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_49" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_50" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_51" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_52" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_53" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_54" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_55" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_56" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_57" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_58" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_59" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_60" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_61" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_62" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_63" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_64" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_65" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_66" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_67" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_68" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_69" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_70" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_71" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_72" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_73" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_74" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_75" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_76" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_77" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_78" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_79" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_80" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_81" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_82" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_83" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_84" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_85" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_86" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_87" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_88" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_89" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_90" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_91" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_92" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_93" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_94" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_95" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_96" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_97" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_98" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      <site name="groove_pool_99" type="box" size="0.01 0.01 0.01" pos="0 0 -10.0" quat="1 0 0 0" rgba="0.2 0.2 0.8 0" group="1"/>
-      
+
         <!-- <site name="ghost_active_region" type="box" size="0.1 0.4 0.05" pos="0 0 0.85" rgba="0 1 0 0.1" group="1"/>
       <site name="virtual_inlay_vis_1" type="cylinder" size="0.02 0.001" pos="0 0 0.851" rgba="1 0 0 0.5"/>
       <site name="virtual_inlay_vis_2" type="cylinder" size="0.02 0.001" pos="0 0 0.851" rgba="1 0 0 0.5"/>
@@ -115,9 +15,9 @@
         <site name="ghost_master_region" type="box" size="0.15 0.5 0.01" pos="0 0 0.005" quat="1 0 0 0" rgba="0 1 0 0.1" group="0"/> -->
       </body>
       
-      <site rgba="0 0 0 0" size="0.05" pos="0 0 -0.005" quat="1 0 0 0" name="bottom_site" group="0"/>
-      <site rgba="0 0 0 0" size="0.05" pos="0 0 0.005" quat="1 0 0 0" name="top_site" group="0"/>
-      <site rgba="0 0 0 0" size="0.05" pos="0.15 0 0" quat="1 0 0 0" name="horizontal_radius_site" group="0"/>
+      <site rgba="0 0 0 0" size="0.01" pos="0 0 0" quat="1 0 0 0" name="bottom_site"/>        
+      <site rgba="0 0 0 0" size="0.01" pos="0 0 0.05" quat="1 0 0 0" name="top_site"/>   
+      <site rgba="0 0 0 0" size="0.01" pos="0.1 0 0" quat="1 0 0 0" name="horizontal_radius_site"/>
     </body>
   </worldbody>
 </mujoco>
