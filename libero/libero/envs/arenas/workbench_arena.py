@@ -27,11 +27,11 @@ class IndustryWorkbenchArena(Arena):
 
     def __init__(
         self,
-        table_full_size=(0.8, 0.8, 0.05),
+        table_full_size=(0.8, 2, 0.05),
         table_friction=(1, 0.005, 0.0001),
         table_offset=(0, 0, 0.8),
         has_legs=True,
-        xml="arenas/table_arena.xml",
+        xml="arenas/libero_industry_workbench_base_style.xml",
         floor_style="light-gray",
         wall_style="light-gray-plaster",
     ):

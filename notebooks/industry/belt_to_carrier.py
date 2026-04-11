@@ -145,7 +145,7 @@ class ConveyorTestScene(InitialSceneTemplates):
         self.regions.update(
             self.get_region_dict(
                 region_centroid_xy=[0, 0.2],  
-                region_name="goal_region",
+                region_name="carrier_region",
                 target_name=self.workspace_name,
                 region_half_len=0.05,  
             )
@@ -177,11 +177,11 @@ register_task_info(language,
                    scene_name=scene_name,
                    objects_of_interest=[],
                    goal_states=[
-                       ("On", "box_1", "industry_workbench_goal_region"),
-                       ("On", "box_2", "industry_workbench_goal_region"),
-                       ("On", "box_3", "industry_workbench_goal_region"),
-                       ("On", "box_4", "industry_workbench_goal_region"),
-                       ("On", "box_5", "industry_workbench_goal_region"),
+                       ("On", "box_1", "industry_workbench_carrier_region"),
+                       ("On", "box_2", "industry_workbench_carrier_region"),
+                       ("On", "box_3", "industry_workbench_carrier_region"),
+                       ("On", "box_4", "industry_workbench_carrier_region"),
+                       ("On", "box_5", "industry_workbench_carrier_region"),
 
                    ],
 )

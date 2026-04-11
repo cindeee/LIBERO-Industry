@@ -91,8 +91,19 @@ class ConveyorBeltMixin:
             if not _in_contact_with(self.sim, obj_body_id, geom_ids):
                 continue
             dof = _get_dof_adr(self.sim, obj_body_id)
-            # Directly set linear velocity along belt axis, preserve vertical
-            self.sim.data.qvel[dof:dof + 3] = target_vel
+            # FIX 1: Set target linear velocity (Forward motion)
+            # We keep the Z-velocity (index 2) so the object can still fall/settle
+            current_z_vel = self.sim.data.qvel[dof + 2]
+            self.sim.data.qvel[dof:dof + 2] = target_vel[:2]
+            self.sim.data.qvel[dof + 2] = current_z_vel 
+
+            # FIX 2: Stabilize Rotation (Prevent Slanting)
+            # dof+3, +4, +5 are angular velocities (roll, pitch, yaw)
+            # We zero out Roll and Pitch so it doesn't tip.
+            # We heavily damp Yaw (index 5) so it stops "slanting"
+            self.sim.data.qvel[dof + 3] = 0.0 # Roll
+            self.sim.data.qvel[dof + 4] = 0.0 # Pitch
+            self.sim.data.qvel[dof + 5] *= 0.1 # Dampen Yaw rotation significantly
 
 
 class ConveyorCurvedMixin:

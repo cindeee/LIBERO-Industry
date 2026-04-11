@@ -87,7 +87,10 @@ def generate_bddl_from_task_info(folder="/tmp/pddl"):
                     print(bddl_file_name)
                 bddl_file_names.append(bddl_file_name)
                 results.append(result)
-            except:
+            except Exception as e:
+                import traceback
+                print(f"FAILED on {scene_name}. Error:")
+                traceback.print_exc()  # This prints the exact line and cause of the failure
                 failures.append((scene_name, language))
     print(f"Succefully generated: {len(results)}")
     return bddl_file_names, failures

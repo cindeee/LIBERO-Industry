@@ -1,4 +1,5 @@
 <mujoco model="workbench_arena">
+
   <asset>
     <texture builtin="gradient" height="256" rgb1=".9 .9 1." rgb2=".2 .3 .4" type="skybox" width="256"/>
     <texture file="../textures/tile_grigia_caldera_porcelain_floor.png" type="2d" name="texplane"/>

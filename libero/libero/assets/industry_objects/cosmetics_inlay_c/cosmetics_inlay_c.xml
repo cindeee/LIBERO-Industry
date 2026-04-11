@@ -1,0 +1,88 @@
+<mujoco model="cosmetics_inlay_c">
+  <default>
+    <default class="visual">
+      <geom group="1" type="mesh" contype="0" conaffinity="0" />
+    </default>
+    <default class="collision">
+      <geom group="0" type="mesh" />
+    </default>
+  </default>
+  <asset>
+    <mesh file="cosmetics_inlay_c.obj" name="cosmetics_inlay_c" />
+    <mesh file="cosmetics_inlay_c_collision_0.obj" name="cosmetics_inlay_c_collision_0" />
+    <mesh file="cosmetics_inlay_c_collision_1.obj" name="cosmetics_inlay_c_collision_1" />
+    <mesh file="cosmetics_inlay_c_collision_2.obj" name="cosmetics_inlay_c_collision_2" />
+    <mesh file="cosmetics_inlay_c_collision_3.obj" name="cosmetics_inlay_c_collision_3" />
+    <mesh file="cosmetics_inlay_c_collision_4.obj" name="cosmetics_inlay_c_collision_4" />
+    <mesh file="cosmetics_inlay_c_collision_5.obj" name="cosmetics_inlay_c_collision_5" />
+    <mesh file="cosmetics_inlay_c_collision_6.obj" name="cosmetics_inlay_c_collision_6" />
+    <mesh file="cosmetics_inlay_c_collision_7.obj" name="cosmetics_inlay_c_collision_7" />
+    <mesh file="cosmetics_inlay_c_collision_8.obj" name="cosmetics_inlay_c_collision_8" />
+    <mesh file="cosmetics_inlay_c_collision_9.obj" name="cosmetics_inlay_c_collision_9" />
+    <mesh file="cosmetics_inlay_c_collision_10.obj" name="cosmetics_inlay_c_collision_10" />
+    <mesh file="cosmetics_inlay_c_collision_11.obj" name="cosmetics_inlay_c_collision_11" />
+    <mesh file="cosmetics_inlay_c_collision_12.obj" name="cosmetics_inlay_c_collision_12" />
+    <mesh file="cosmetics_inlay_c_collision_13.obj" name="cosmetics_inlay_c_collision_13" />
+    <mesh file="cosmetics_inlay_c_collision_14.obj" name="cosmetics_inlay_c_collision_14" />
+    <mesh file="cosmetics_inlay_c_collision_15.obj" name="cosmetics_inlay_c_collision_15" />
+    <mesh file="cosmetics_inlay_c_collision_16.obj" name="cosmetics_inlay_c_collision_16" />
+    <mesh file="cosmetics_inlay_c_collision_17.obj" name="cosmetics_inlay_c_collision_17" />
+    <mesh file="cosmetics_inlay_c_collision_18.obj" name="cosmetics_inlay_c_collision_18" />
+    <mesh file="cosmetics_inlay_c_collision_19.obj" name="cosmetics_inlay_c_collision_19" />
+    <mesh file="cosmetics_inlay_c_collision_20.obj" name="cosmetics_inlay_c_collision_20" />
+    <mesh file="cosmetics_inlay_c_collision_21.obj" name="cosmetics_inlay_c_collision_21" />
+    <mesh file="cosmetics_inlay_c_collision_22.obj" name="cosmetics_inlay_c_collision_22" />
+    <mesh file="cosmetics_inlay_c_collision_23.obj" name="cosmetics_inlay_c_collision_23" />
+    <mesh file="cosmetics_inlay_c_collision_24.obj" name="cosmetics_inlay_c_collision_24" />
+    <mesh file="cosmetics_inlay_c_collision_25.obj" name="cosmetics_inlay_c_collision_25" />
+    <mesh file="cosmetics_inlay_c_collision_26.obj" name="cosmetics_inlay_c_collision_26" />
+  </asset>
+  <worldbody>
+    <body>
+      <body name="object" pos="0 0 0" quat="1 0 0 0">
+        <body name="cosmetics_inlay_c" pos="0 0 0" quat="1 0 0 0">
+          <inertial pos="0 0 0" mass="0.5" diaginertia="1e-3 1e-3 1e-3" />
+          <geom type="mesh" mesh="cosmetics_inlay_c" group="1" quat="1 0 0 0" rgba="0.8 0.8 0.8 1" contype="0" conaffinity="0" />
+          <geom type="mesh" mesh="cosmetics_inlay_c_collision_0" group="0" quat="1 0 0 0" />
+          <geom type="mesh" mesh="cosmetics_inlay_c_collision_1" group="0" quat="1 0 0 0" />
+          <geom type="mesh" mesh="cosmetics_inlay_c_collision_2" group="0" quat="1 0 0 0" />
+          <geom type="mesh" mesh="cosmetics_inlay_c_collision_3" group="0" quat="1 0 0 0" />
+          <geom type="mesh" mesh="cosmetics_inlay_c_collision_4" group="0" quat="1 0 0 0" />
+          <geom type="mesh" mesh="cosmetics_inlay_c_collision_5" group="0" quat="1 0 0 0" />
+          <geom type="mesh" mesh="cosmetics_inlay_c_collision_6" group="0" quat="1 0 0 0" />
+          <geom type="mesh" mesh="cosmetics_inlay_c_collision_7" group="0" quat="1 0 0 0" />
+          <geom type="mesh" mesh="cosmetics_inlay_c_collision_8" group="0" quat="1 0 0 0" />
+          <geom type="mesh" mesh="cosmetics_inlay_c_collision_9" group="0" quat="1 0 0 0" />
+          <geom type="mesh" mesh="cosmetics_inlay_c_collision_10" group="0" quat="1 0 0 0" />
+          <geom type="mesh" mesh="cosmetics_inlay_c_collision_11" group="0" quat="1 0 0 0" />
+          <geom type="mesh" mesh="cosmetics_inlay_c_collision_12" group="0" quat="1 0 0 0" />
+          <geom type="mesh" mesh="cosmetics_inlay_c_collision_13" group="0" quat="1 0 0 0" />
+          <geom type="mesh" mesh="cosmetics_inlay_c_collision_14" group="0" quat="1 0 0 0" />
+          <geom type="mesh" mesh="cosmetics_inlay_c_collision_15" group="0" quat="1 0 0 0" />
+          <geom type="mesh" mesh="cosmetics_inlay_c_collision_16" group="0" quat="1 0 0 0" />
+          <geom type="mesh" mesh="cosmetics_inlay_c_collision_17" group="0" quat="1 0 0 0" />
+          <geom type="mesh" mesh="cosmetics_inlay_c_collision_18" group="0" quat="1 0 0 0" />
+          <geom type="mesh" mesh="cosmetics_inlay_c_collision_19" group="0" quat="1 0 0 0" />
+          <geom type="mesh" mesh="cosmetics_inlay_c_collision_20" group="0" quat="1 0 0 0" />
+          <geom type="mesh" mesh="cosmetics_inlay_c_collision_21" group="0" quat="1 0 0 0" />
+          <geom type="mesh" mesh="cosmetics_inlay_c_collision_22" group="0" quat="1 0 0 0" />
+          <geom type="mesh" mesh="cosmetics_inlay_c_collision_23" group="0" quat="1 0 0 0" />
+          <geom type="mesh" mesh="cosmetics_inlay_c_collision_24" group="0" quat="1 0 0 0" />
+          <geom type="mesh" mesh="cosmetics_inlay_c_collision_25" group="0" quat="1 0 0 0" />
+          <geom type="mesh" mesh="cosmetics_inlay_c_collision_26" group="0" quat="1 0 0 0" />
+          <site name="goal_point_cream_bottle" type="sphere" size="0.003" pos="0.026151 0.026151 0.012190" quat="1 0 0 0" rgba="1 0 0 0.8" group="0" />
+          <site name="goal_area_cream_bottle" type="box" size="0.047775 0.047775 0.006405" pos="0.026151 0.026151 0.018595" quat="1 0 0 0" rgba="0 1 0 0.2" group="0" />
+          <site name="goal_point_jar" type="sphere" size="0.003" pos="0.025076 -0.045993 -0.010070" quat="1 0 0 0" rgba="1 0 0 0.8" group="0" />
+          <site name="goal_area_cream_jar" type="box" size="0.035070 0.035070 0.017535" pos="0.025076 -0.045993 0.007465" quat="1 0 0 0" rgba="0 1 0 0.2" group="0" />
+          <site name="goal_point_pump_bottle" type="sphere" size="0.003" pos="-0.065 0 0.007833" quat="1 0 0 0" rgba="1 0 0 0.8" group="0" />
+          <site name="goal_area_pump_bottle" type="box" size="0.064050 0.064050 0.008584" pos="-0.065 0 0.016416" quat="1 0 0 0" rgba="0 1 0 0.2" group="0" />
+          <site name="goal_point_serum_bottle" type="sphere" size="0.003" pos="0.027063 0.007534 0.010668" quat="1 0 0 0" rgba="1 0 0 0.8" group="0" />
+          <site name="goal_area_serum_bottle" type="box" size="0.044415 0.044415 0.007166" pos="0.027063 0.007534 0.017834" quat="1 0 0 0" rgba="0 1 0 0.2" group="0" />
+        </body>
+      </body>
+      <site name="bottom_site" pos="0 0 -0.0245" size="0.01" rgba="0 0 0 0" quat="1 0 0 0" />
+      <site name="top_site" pos="0 0 0.0245" size="0.01" rgba="0 0 0 0" quat="1 0 0 0" />
+      <site name="horizontal_radius_site" pos="0.1 0.0935 0" size="0.01" rgba="0 0 0 0" quat="1 0 0 0" />
+    </body>
+  </worldbody>
+</mujoco>

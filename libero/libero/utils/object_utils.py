@@ -45,6 +45,8 @@ def get_affordance_regions(objects, verbose=False):
             if len(object_affordance) > 0:
                 affordances[object_name] = object_affordance
         except:
+            #  Exception as e:
+            # print(f"CRITICAL ERROR loading {object_name}: {e}")
             if verbose:
                 print(f"Skipping {object_name}")
 
